@@ -53,9 +53,10 @@ public class HelloController {
 		return "redirect:/hello";
 	}
 
-	@RequestMapping("/hello7")
-	public void hello7(HttpServletRequest request, HttpServletResponse response, HttpSession session, Writer pw) throws IOException {
+	@RequestMapping("/hello7")//개비추 //기술비침투 전력에 위배됨
+	public void hello7(HttpServletRequest request, HttpServletResponse response, HttpSession session, Writer pw)
+			throws IOException {
 		pw.write("<h1>Hello World</h1>");
 	}
-
+	
 }
