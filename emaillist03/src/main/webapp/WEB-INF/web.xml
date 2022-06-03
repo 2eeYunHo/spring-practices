@@ -3,11 +3,22 @@
 	xmlns="http://JAVA.sun.com/xml/ns/javaee"
 	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
 	version="2.5">
-	<display-name>hellospring</display-name>
-
+	<display-name>emaillist03</display-name>
+	
+	<!-- Context Param -->
+	<context-param>
+		<param-name>contextConfigLocation</param-name>
+		<param-value>classpath:applicationContext.xml</param-value>
+	</context-param>
+	
+	<!-- Context Load Listener -->
+	<listener>
+		<listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
+	</listener>
+	
 	<!-- Dispatcher Servlet-->
 	<servlet><!-- 스프링대신 가능? (명시를 해두었기때문)dispatcher -->
-		<servlet-name>spring</servlet-name>
+		<servlet-name>dispatcher</servlet-name>
 		<servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
 		
 		<init-param>
@@ -17,10 +28,11 @@
 		
 	</servlet>
 	<servlet-mapping>
-		<servlet-name>spring</servlet-name>
+		<servlet-name>dispatcher</servlet-name>
 		<url-pattern>/</url-pattern>
 	</servlet-mapping>
-
+	
+	
 	<welcome-file-list>
 		<welcome-file>index.html</welcome-file>
 		<welcome-file>index.htm</welcome-file>

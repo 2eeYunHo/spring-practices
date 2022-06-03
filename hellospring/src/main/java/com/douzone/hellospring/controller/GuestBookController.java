@@ -7,8 +7,8 @@ import org.springframework.web.bind.annotation.ResponseBody;
 /**
  * 
  * @RequestMapping 클래스(타입) + 핸들러(메소드)
- *
- */
+ * 
+ **/
 @Controller
 @RequestMapping("/guestbook/*")
 public class GuestBookController {
