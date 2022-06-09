@@ -5,7 +5,7 @@
 		<artifactId>spring-practices</artifactId>
 		<version>0.0.1-SNAPSHOT</version>
 	</parent>
-	<artifactId>hellospring</artifactId>
+	<artifactId>logex</artifactId>
 	<packaging>war</packaging>
 	
 	<properties>
@@ -54,7 +54,7 @@
 	</dependencies>
 	
 	<build>
-		<finalName>hellospring</finalName>
+		<finalName>logex</finalName>
 		<plugins>
 			<plugin>
 			    <groupId>org.apache.maven.plugins</groupId>
@@ -67,11 +67,12 @@
 			    <version>1.1</version>
 			    <configuration>
 			    	<url>http://192.168.0.146:8080/manager/text</url>
-			    	<path>/hellospring</path>
+			    	<path>/logex</path>
 			    	<username>llyn99</username>
 			    	<password>llyn99</password>
 			    </configuration>
 			</plugin>			
 		</plugins>
 	</build>	
+	
 </project>
